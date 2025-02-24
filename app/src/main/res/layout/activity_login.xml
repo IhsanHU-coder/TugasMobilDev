@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg_regis_3"
+android:padding="16dp"
+
+tools:context=".Register"    >
+
+<ImageView
+    android:id="@+id/arrow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="login"
+    android:src="@drawable/arrow_backward"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:gravity="center"
+    android:text="Create Account"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:textSize="28dp"/>
+
+<EditText
+    android:id="@+id/text_edUsername"
+    android:autofillHints="Username"
+    android:hint="Username"
+    android:textColor="@color/black"
+    android:inputType="text"
+    android:drawablePadding="15dp"
+    android:background="@drawable/register_edittext_background"
+    android:elevation="16dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_width="match_parent"
+    android:drawableLeft="@drawable/people"
+
+    android:padding="10dp"
+    android:layout_height="46dp"/>
+<EditText
+    android:id="@+id/text_edPassword"
+    android:inputType="textPassword"
+    android:autofillHints="Password"
+    android:hint="Password"
+    android:textColor="@color/black"
+    android:background="@drawable/register_edittext_background"
+    android:elevation="16dp"
+    android:drawableLeft="@drawable/baseline_lock_24"
+    android:padding="10dp"
+    android:drawablePadding="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"/>
+<EditText
+    android:id="@+id/text_edEmail"
+    android:inputType="textEmailAddress"
+    android:hint="Email Address"
+    android:background="@drawable/register_edittext_background"
+    android:elevation="16dp"
+    android:textColor="@color/black"
+    android:padding="10dp"
+    android:drawablePadding="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_width="match_parent"
+    android:autofillHints="Email Address"
+    android:drawableLeft="@drawable/baseline_alternate_email_24"
+    android:layout_height="46dp"/>
+
+<EditText
+    android:id="@+id/text_edPhone"
+    android:autofillHints="Your Phone Number"
+    android:hint="Phone Number"
+    android:inputType="phone"
+    android:background="@drawable/register_edittext_background"
+    android:elevation="16dp"
+    android:textColor="@color/black"
+    android:padding="10dp"
+    android:drawablePadding="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_width="match_parent"
+    android:drawableLeft="@drawable/baseline_local_phone_24"
+    android:layout_height="46dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="32dp"
+    android:layout_marginRight="16dp"
+    android:gravity="right|center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnCreateRegis"
+        android:layout_width="62dp"
+        android:layout_height="42dp"
+        android:onClick="RegisterAccount"
+        android:background="@drawable/register_button2"
+        android:contentDescription="btnCreate"
+        android:text="Create"
+        />
+
+</LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="16dp"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:text="Or create account using media"
+    />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btnFacebook"
+        android:contentDescription="btnFacebook"
+        android:layout_width="@dimen/social_btn_size"
+        android:layout_height="@dimen/social_btn_size"
+        android:background="@drawable/facebook"
+        android:text="FACEBOOK" />
+
+    <ImageButton
+        android:id="@+id/btnTwitter"
+        android:contentDescription="btnTwitter"
+        android:layout_width="@dimen/social_btn_size"
+        android:layout_height="@dimen/social_btn_size"
+        android:background="@drawable/twitter"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="TWITTER"
+        />
+    <ImageButton
+        android:id="@+id/btnGoogle"
+        android:contentDescription="btnGoogle"
+        android:layout_width="@dimen/social_btn_size"
+        android:layout_height="@dimen/social_btn_size"
+        android:background="@drawable/google"
+        android:text="GOOGLE"
+        />
+
+</LinearLayout>
+
+</LinearLayout>
